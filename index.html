@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <link rel="stylesheet" crossorigin href="style.css" />
+  </head>
+  <body class="font-sans bg-gray-800 text-white w-screen">
+    <header>
+      <nav class="md:flex justify-between">
+        <a href="#" class="" onclick="menu()">
+          <img
+            class="w-10 mx-8 p-2 block md:hidden"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%20width='480px'%20height='480px'%3e%3cpath%20fill='%23c2e8ff'%20d='M1.5%2018.5H38.5V21.5H1.5z'/%3e%3cpath%20fill='%237496c4'%20d='M38,19v2H2v-2H38%20M39,18H1v4h38V18L39,18z'/%3e%3cpath%20fill='%23c2e8ff'%20d='M1.5%208.5H38.5V11.5H1.5z'/%3e%3cpath%20fill='%237496c4'%20d='M38,9v2H2V9H38%20M39,8H1v4h38V8L39,8z'/%3e%3cg%3e%3cpath%20fill='%23c2e8ff'%20d='M1.5%2028.5H38.5V31.5H1.5z'/%3e%3cpath%20fill='%237496c4'%20d='M38,29v2H2v-2H38%20M39,28H1v4h38V28L39,28z'/%3e%3c/g%3e%3c/svg%3e"
+            alt=""
+          />
+        </a>
+        <ul id="menu" class="hidden p-4 *:p-2 text-xl">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contact</a></li>
+          <li>
+            <button
+              id="toggle_bg"
+              onclick="mode()"
+              class="w-14 h-7 bg-white flex items-center rounded-2xl scale-50"
+            >
+              <div
+                id="toggle"
+                class="w-6 h-6 m-1 bg-gray-600 rounded-full"
+              ></div>
+            </button>
+          </li>
+        </ul>
+        <ul class="hidden md:flex justify-end p-5 text-xl *:mx-5">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contact</a></li>
+          <li>
+            <button
+              id="toggle_bg"
+              onclick="mode()"
+              class="w-14 h-7 bg-white flex items-center rounded-2xl"
+            >
+              <div
+                id="toggle"
+                class="w-6 h-6 m-1 bg-gray-600 rounded-full"
+              ></div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="md:flex items-center justify-center mx-2 p-10">
+      <p
+        class="font-mono md:w-1/2 text-center md:text-left text-2xl p-4 md:text-4xl"
+      >
+        Hi! <br />
+        My name is <span class="text-green-500">Moorthi Dharmaraj</span> and I
+        am a web developer based in India.
+      </p>
+      <img class="md:w-1/2" src="flat image.jpg" alt="" />
+    </main>
+    <section id="about" class="md:flex w-full">
+      <div class="flex md:w-1/3 flex-col items-center justify-center">
+        <h1 class="font-mono text-green-500 text-4xl">About me</h1>
+        <span class="mb-6 ml-2 h-1 w-14 bg-green-500"></span>
+      </div>
+      <p class="text-center md:text-left md:w-2/3 p-10 text-lg">
+        A self-taught web developer with a passion for turning ideas into
+        digital experiences. My journey in web development began with a
+        curiosity to understand how websites work, and it has evolved into a
+        continuous exploration of new technologies and creative solutions. I
+        specialize in crafting responsive and user-friendly web applications,
+        always striving for clean code and elegant design. My approach to
+        development involves a balance between functionality and aesthetics,
+        with a keen eye for detail. When I'm not coding, you'll find me
+        experimenting with new frameworks, contributing to open-source projects,
+        or enjoying a cup of coffee while sketching out new project ideas. I
+        believe in the power of collaboration and enjoy being part of a
+        community that shares knowledge and pushes the boundaries of what can be
+        achieved on the web. Feel free to explore my portfolio and discover the
+        projects that reflect my dedication to the world of web development. If
+        you have any questions or would like to connect, I'm just a message
+        away. Let's create something amazing together!
+      </p>
+    </section>
+    <!-- <section id="projects" class="flex p-10 *:m-5 justify-between"> -->
+    <section
+      id="projects"
+      class="grid gap-4 p-10 lg:grid-cols-[1fr_1fr_1fr] md:grid-cols-[1fr_1fr] grid-cols-[1fr] mx-auto"
+    >
+      <div
+        class="card p-5 *:p-2 border shadow-black shadow-sm rounded-xl cursor-pointer hover:scale-105 hover:transform"
+      >
+        <img class="" src="project.jpg" alt="" />
+        <h1 class="text-xl">Project Title</h1>
+        <p>Project Description</p>
+        <ul class="flex justify-around">
+          <li>#React</li>
+          <li>#css</li>
+          <li>#Typescript</li>
+        </ul>
+      </div>
+      <div
+        class="card p-5 *:p-2 border shadow-black shadow-sm rounded-xl cursor-pointer hover:scale-105 hover:transform"
+      >
+        <img class="" src="project.jpg" alt="" />
+        <h1 class="text-xl">Project Title</h1>
+        <p>Project Description</p>
+        <ul class="flex justify-around">
+          <li>#React</li>
+          <li>#css</li>
+          <li>#Typescript</li>
+        </ul>
+      </div>
+      <div
+        class="card p-5 *:p-2 border shadow-black shadow-sm rounded-xl cursor-pointer hover:scale-105 hover:transform"
+      >
+        <img class="" src="project.jpg" alt="" />
+        <h1 class="text-xl">Project Title</h1>
+        <p>Project Description</p>
+        <ul class="flex justify-around">
+          <li>#React</li>
+          <li>#css</li>
+          <li>#Typescript</li>
+        </ul>
+      </div>
+    </section>
+    <footer id="contacts" class="flex p-20 justify-center items-center">
+      <ul class="flex *:mx-10">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/moorthi-d-0b5139119/"
+            target="_blank"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <a href="mailto:moorthigemini@gmail.com" target="_blank">Gmail</a>
+        </li>
+        <li>
+          <a href="https://github.com/moorthidharmaraj" target="_blank"
+            >Github</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
