@@ -1,5 +1,7 @@
 const toggle = document.getElementById("toggle");
 const toggle_bg = document.getElementById("toggle_bg");
+const toggle_small = document.getElementById("toggle_small");
+const toggle_bg_small = document.getElementById("toggle_bg_small");
 const menu_ele = document.getElementById("menu");
 
 let btn = false;
@@ -8,10 +10,14 @@ function mode() {
   if (btn) {
     toggle_bg.classList.add("toggle_bg");
     toggle.classList.add("toggle");
+     toggle_bg_small.classList.add("toggle_bg");
+    toggle_small.classList.add("toggle");
     document.body.classList.add("body_toggle");
   } else {
     toggle_bg.classList.remove("toggle_bg");
     toggle.classList.remove("toggle");
+    toggle_bg_small.classList.remove("toggle_bg");
+    toggle_small.classList.remove("toggle");
     document.body.classList.remove("body_toggle");
   }
 }
