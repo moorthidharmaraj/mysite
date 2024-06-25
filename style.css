@@ -502,7 +502,7 @@ video {
 }
 .toggle {
   animation-name: toggling;
-  transform: translate(21px);
+  transform: translateX(21px);
   background-color: #fff;
 }
 .body_toggle {
