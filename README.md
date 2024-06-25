@@ -1,1 +1,1 @@
-[Go to Live Page](https://moorthidharmaraj.github.io/mysite/){:target="_blank"}
+[Go to Live Page](https://moorthidharmaraj.github.io/mysite/){:target="_blank" rel="noopener"}
