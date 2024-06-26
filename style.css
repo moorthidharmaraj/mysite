@@ -566,6 +566,7 @@ video {
   }
 }
 footer ul li{
+  display:flex;
   justify-content:space-around;
 }
 
