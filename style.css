@@ -565,14 +565,13 @@ video {
     line-height: 2.5rem;
   }
 }
-footer ul{
-  display:flex;
-  width:100%;
-  justify-content:space-around;
+footer ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
-footer ul li{
-  
-  justify-content:space-around;
+footer ul li {
+  justify-content: space-around;
 }
 
 @media (min-width: 1024px) {
@@ -581,6 +580,10 @@ footer ul li{
   }
 }
 @keyframes toggling {
-  from {  transform: translateX(0);}
-  to {  transform: translateX(21px);}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(21px);
+  }
 }
