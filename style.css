@@ -565,8 +565,11 @@ video {
     line-height: 2.5rem;
   }
 }
-footer ul li{
+footer ul{
   display:flex;
+}
+footer ul li{
+  
   justify-content:space-around;
 }
 
