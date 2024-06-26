@@ -565,6 +565,10 @@ video {
     line-height: 2.5rem;
   }
 }
+footer ul li{
+  justify-content:space-around;
+}
+
 @media (min-width: 1024px) {
   .lg\:grid-cols-\[1fr_1fr_1fr\] {
     grid-template-columns: 1fr 1fr 1fr;
