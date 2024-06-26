@@ -567,6 +567,7 @@ video {
 }
 footer ul{
   display:flex;
+  width:100%;
 }
 footer ul li{
   
